@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Подсказки по организациям</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+        <a class="navbar-brand" href="#">Подсказки по организациям</a>
+    <section class="container">
+        <ul class="nav navbar-nav  m-lg-1 ">
+            <li>
+                <button type="button" class="btn btn-primary navbar-btn flex-end">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    Love
+                </button>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav  m-lg-1">
+            <li>
+                <button type="button" class="btn btn-primary navbar-btn">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    View Source Code
+                </button>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav  m-lg-1">
+            <li>
+                <button type="button" class="btn btn-primary navbar-btn">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    Sign Up
+                </button>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav  m-lg-1">
+            <li>
+                <button type="button" class="btn btn-primary navbar-btn">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    Log In
+                </button>
+            </li>
+        </ul>
+    </section>
+    </nav>
+
+    <div class="row">
+    <label><strong>Компания или ИП</strong></label>
+    <input  class="party" id="party" name="party" placeholder="Введите название, ИНН, ОГРН или адрес организации">
+    </div>
+    <section class="result">
+
+        <p id="type"></p>
+        <div class="row">
+            <label>Краткое наименование</label>
+            <input class="name_short" id="name_short" name="party">
+        </div>
+        <div class="row">
+            <label>Полное наименование</label>
+            <input  class="name_full"  id="name_full" name="party">
+        </div>
+        <div class="row">
+            <label>ИНН / КПП</label>
+            <input  class="inn"  id="inn" name="party">
+        </div>
+        <div class="row">
+            <label>Адрес</label>
+            <input  class="address" id="address"   name="party">
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
